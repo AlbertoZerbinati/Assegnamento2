@@ -1,0 +1,2 @@
+aspirapolvere.dat
+lavatrice.dat

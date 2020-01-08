@@ -1,0 +1,16 @@
+[0] [model_id] [quantity]
+[0] [model_id] [quantity]
+[0] [model_id] [quantity]
+[1] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+[time_stamp] [model_id] [quantity]
+
+time_stamp indica in che mese l'ordine ci viene fatto

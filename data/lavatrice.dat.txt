@@ -1,0 +1,6 @@
+02 lavatrice
+
+[component_id] [component_name] [quantity_needed]
+[component_id] [component_name] [quantity_needed]
+[component_id] [component_name] [quantity_needed]
+[component_id] [component_name] [quantity_needed]
