@@ -1,6 +1,7 @@
-01 aspirapolvere
+0 		aspirapolvere
 
-[component_id] [component_name] [quantity_needed]
-[component_id] [component_name] [quantity_needed]
-[component_id] [component_name] [quantity_needed]
-[component_id] [component_name] [quantity_needed]
+0 		filo 		2
+1 		involucro 	3
+2 		circuito 	2
+3 		pompa 		1
+4 		display 	1

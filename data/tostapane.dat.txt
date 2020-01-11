@@ -1,0 +1,4 @@
+4 tostapane
+
+0 filo 1
+1 involucro 2
