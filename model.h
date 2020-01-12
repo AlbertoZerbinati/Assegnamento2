@@ -9,4 +9,9 @@ struct model
     std::string model_name;
 };
 
+inline std::ostream& operator<< (std::ostream& os, const model& m) {
+    os << "--  " << m.model_id << ", " << m.model_name << ".\n";
+    return os;
+};
+
 #endif

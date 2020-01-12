@@ -1,6 +1,6 @@
-aspirapolvere.dat
-lavatrice.dat
-frullatore.dat
-lavastoviglie.dat
-tostapane.dat
-phon.dat
+aspirapolvere.txt
+lavatrice.txt
+frullatore.txt
+lavastoviglie.txt
+tostapane.txt
+phon.txt
