@@ -1,4 +1,6 @@
-#pragma once
+#ifndef MODEL_H
+#define MODEL_H
+
 #include <iostream>
 
 struct model
@@ -6,3 +8,5 @@ struct model
     int model_id;
     std::string model_name;
 };
+
+#endif

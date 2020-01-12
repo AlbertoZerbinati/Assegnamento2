@@ -1,0 +1,5 @@
+5 phon
+
+0 filo 1
+1 involucro 2
+2 circuito 1

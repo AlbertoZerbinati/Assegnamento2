@@ -1,0 +1,8 @@
+3 lavastoviglie
+
+1 involucro 7
+2 circuito 3
+3 pompa 1
+6 luce 1
+4 display 1
+ 

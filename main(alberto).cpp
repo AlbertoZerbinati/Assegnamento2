@@ -8,7 +8,7 @@ using namespace std;
 
 class Invalid {};
 
-bool not_finished(int m, const vector<order>& o); //controlla se il main deve terminare
+bool finished(int m, const vector<order>& o); //controlla se il main deve terminare
 void fill_orders(vector<order>& o, istream& i);   //riempre il vector da orders.dat
 
 
@@ -33,7 +33,7 @@ int main() {
 
 	//LOOP principale del programma!
 	int index = 0;
-	for (month = 0; not_finished(month, orders); month++) {
+	for (month = 0; ! finished(month, orders); month++) {
 		while(orders[month + index].time_stamp == month) { //passo gli ordini mese per mese al System
 			syst.add(orders[month + index]);
 			index++;
@@ -46,22 +46,13 @@ int main() {
 	cout << "*** STAMPA System *** \n";
 	cout << syst;
 
-
-
-
-
 	return 0;
 }
 
 
 
-
-
-
-
-
-bool not_finished(int m, const vector<order>& o) {
-	return m < o[o.size() - 1].time_stamp + 12;  //il +12 è per indicare che lasciamo un anno a partire
+bool finished(int m, const vector<order>& o) {
+	return m > o[o.size() - 1].time_stamp + 12;  //il +12 è per indicare che lasciamo un anno a partire
 	                                             //dal time_stamp dell'ULTIMO ORDINE per completarne la
 	                                             //consegna, ma si può scegliere un criterio migliore
 }

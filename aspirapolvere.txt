@@ -1,0 +1,7 @@
+0 		aspirapolvere
+
+0 		filo 		2
+1 		involucro 	3
+2 		circuito 	2
+3 		pompa 		1
+4 		display 	1
