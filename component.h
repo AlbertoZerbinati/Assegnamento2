@@ -1,4 +1,6 @@
-#pragma once
+#ifndef COMPONENT_H
+#define COMPONENT_H
+
 #include <iostream>
 
 
@@ -8,3 +10,5 @@ struct component
     std::string component_name;
     double quantity;    // mi tocca mettere double per non avere conflitti con component_id
 };
+
+#endif
