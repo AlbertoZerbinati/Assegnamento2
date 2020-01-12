@@ -30,22 +30,13 @@ private:
 	std::vector<std::vector<component> > models_infos; //per ogni modello dice le componenti per produrlo
 	std::vector<component_info> components_infos; //info delle componenti
 
-	//std::vector<component> components; //vettore che tiene tutte le componenti e loro caratteristiche
-
-	std::vector< std::vector<component> > components_needed;
-	//contiene all'indice i componenti necessari per la costruzione degli ED ordinati al mese i
-	//una volta arrivati posso controllare da orders quali ED riesco a costruire con tali componenti
-
-	//le merci nel magazzino deovono sapere se sono impegnate (aspettano altre merci per un certo ED)
-	//o meno
-
 	//Magazzino m;
+	// nota: le merci nel magazzino deovono sapere se sono impegnate (cioè se stanno aspettando altre merci
+	// per un certo ED) o meno
 
 	void print(); //FUNZIONE RICHIESTA: printa componenti in arrivo, ordini evasi, situazione magazzino
 	void order_components(); //filla components_needed leggendo i vari file modelX.dat e models.dat
-	bool ordine_evaso() {
-		return true;
-	}; //solo per capire se printare
+	bool ordine_evaso() {return true;}; //solo per capire se printare, è da cambiare ovviamente
 	void fill_data();
 	std::vector<component> fill_components_month();
 };
@@ -62,7 +53,7 @@ inline std::ostream& operator<< (std::ostream& os, const System& s) {
 		os << s.model_types[i];
 
 		std::cout << "\n";
-		
+
 		for (int j = 0; j < s.models_infos[i].size(); j++)
 			os << s.models_infos[i][j];
 
