@@ -11,7 +11,7 @@
 class System {
 public:
 	//FUNZIONI
-	void add(order ro) { month_orders.push_back(ro); };   //agguingo gli ordini dell'ultimo mese
+	void add(order or) { month_orders.push_back(or); };   //agguingo gli ordini dell'ultimo mese
 
 	void check_situation(); //incrementa il mese (invocata una volta al mese), chiama la funz
 	                        //che ordina componenti per quel mese e print() nel caso in cui un
@@ -26,7 +26,9 @@ public:
 private:
 	//VARIABILI
 	int month = -1;
-	std::vector<order> month_orders;    //contiene tutti gli ordini bell'ordine in cui sono arrivati
+
+	//dovrebbe essere un vector<vector<ordini>> con indice i mesi?? <- modificherebbe l'add(order)...
+	std::vector<order> month_orders;    //contiene tutti gli ordini nell'ordine in cui sono arrivati
 										//non sto così tenendo traccia del mese con gli indici del vettore ma ogni ordine ha apposta
 										//la variabile time_stamp
 
@@ -34,11 +36,16 @@ private:
 	std::vector<std::vector<component>> models_infos;   //per ogni modello dice le componenti per produrlo
 	std::vector<component_info> components_infos; 		//info delle componenti
 
+	//std::vector<std::vector<Pair(n, t)>> componenti_in_arrivo;
+
 	//Magazzino m;	// nota: le merci nel magazzino deovono sapere se sono impegnate (cioè se stanno aspettando altre merci
 					// per un certo ED) o meno
 
 	//FUNZIONI
 	void print(); 						//FUNZIONE RICHIESTA: printa componenti in arrivo, ordini evasi, situazione magazzino
+										//deve printare tutto lo storico degli ordini ogni volta, quindi non posso
+										//rimuovere ordini già evasi da month_orders. utilizzo bool in order.h!!!
+
 	bool ordine_evaso() {return true;}; //solo per capire se printare, è da cambiare ovviamente
 	void fill_data(); 					//invocata solo all'inizio per riempire i vettori coi dati utili
 	void order_components(); 			//inserisce i componenti da ordinare nella struttura apposita

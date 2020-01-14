@@ -5,8 +5,9 @@
 void System::check_situation() {
 	month++; //incrementa il mese come prima cosa
 
-	//if (non ci sono già componenti in magazzino)
-		order_components();
+	//for each ED nell'ordine
+		//if (non ci sono già TUTTI i componenti per produrre un lotto di ED in magazzino)
+			order_components();
 
 	if (ordine_evaso())
 		print();
@@ -22,6 +23,8 @@ void System::order_components() {
 	}
 
 	//...
+	//aggiungo in componenti_in_arrivo all'indice month un vettore che usa come indici gli ID_COMPONENTE
+	//e contiene Pair(quantità_ordinata, tempo di arrivo oppure mese di arrivo di quei componenti)
 
 }
 

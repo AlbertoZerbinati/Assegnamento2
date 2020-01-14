@@ -4,7 +4,7 @@
 #include <iostream>
 
 struct order {   // per leggere gli ordini su orders.dat
-    //order(int t, int m, int q) : time_stamp{t}, model_id{m}, quantity_ordered{q} {}
+    order(int t, int m, int q) : time_stamp{t}, model_id{m}, quantity_ordered{q} {}
 
     int time_stamp;
     int model_id;
