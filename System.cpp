@@ -3,22 +3,26 @@
 #include <fstream>
 
 void System::check_situation() {
-	month++;
-	order_components();
+	month++; //incrementa il mese come prima cosa
+
+	//if (non ci sono già componenti in magazzino)
+		order_components();
+
 	if (ordine_evaso())
 		print();
 }
 
 void System::print() {
-	//std::cout << "\nmonth: " << month << "\n";
+
 }
 
 void System::order_components() {
 	if (month == 0) {  //lo faccio solo al primo giro
 		fill_data(); //riempio model_types che mi serve per leggere i file modelX che contengono le componenti da produrre
-		//components_needed[month] = fill_components_month();
-
 	}
+
+	//...
+
 }
 
 void System::fill_data() {
@@ -30,13 +34,14 @@ void System::fill_data() {
     // store models
     std::vector<std::string> model_files;                  // questo è il mio vettore con i model
     std::string file;
-    while (ist >> file)
+
+	while (ist >> file)
         model_files.push_back(std::string{file});
-    ist.close();    // chiudo ist
+
+	ist.close();    // chiudo ist
 
     // store model_id, model_name
-    for (int i=0; i < model_files.size(); ++i)
-    {
+    for (int i=0; i < model_files.size(); ++i) {
         // input [model1.dat] (esempio)
         std::string input_name = model_files[i];
         std::ifstream ist2 {input_name};
@@ -69,11 +74,11 @@ void System::fill_data() {
     int component_id;
     std::string component_name;
     double delivery_time;
-    while (ist_info >> component_id >> component_name >> delivery_time)
+
+	while (ist_info >> component_id >> component_name >> delivery_time)
         components_infos.push_back(component_info{component_id, component_name, delivery_time});   // store
-    ist_info.close();    // chiudo ist_info
-}
 
-std::vector<component> System::fill_components_month() {
+	ist_info.close();    // chiudo ist_info
 
+	//gli stream verrebbero comunque chiusi automaticamente all'uscita dal loro scope
 }

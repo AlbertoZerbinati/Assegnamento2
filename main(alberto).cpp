@@ -26,10 +26,10 @@ int main() {
 	//riempio orders dal orders.dat
 	fill_orders(orders, ist);
 
-	cout << "*** STAMPA orders <- orders.dat *** \n";
-	for (order ro : orders)
-		cout << ro;
-	cout << "\n\n";
+	// cout << "*** STAMPA orders <- orders.dat *** \n";
+	// for (order ro : orders)
+	// 	cout << ro;
+	// cout << "\n\n";
 
 	//LOOP principale del programma!
 	int index = 0;

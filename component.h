@@ -9,6 +9,8 @@ struct component
     int component_id;                               // [model1.dat] (esempio)
     std::string component_name;
     int quantity;    // mi tocca mettere double per non avere conflitti con component_id
+    //bool prenotata = false; //per organizzare magazzino??? forse meglio il magazzino abbia una
+                              //sezione ECCEDENZe / PRENOTATE
 };
 
 inline std::ostream& operator<< (std::ostream& os, const component& c) {
