@@ -1,0 +1,7 @@
+2 frullatore 300
+
+0 filo       1   1  1  0  	            
+1 involucro  3   5  2  1
+2 circuito   1  10  5  2 
+4 display    1  30 15  7
+5 lame       2  40 20  2

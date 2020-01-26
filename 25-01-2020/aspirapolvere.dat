@@ -1,0 +1,10 @@
+0 		aspirapolvere 250
+  
+0 		filo 		2 1  1  0
+1 		involucro 	3 5  2  1
+2 		circuito 	2 10 5  2
+3 		pompa 		1 30 15 7
+4 		display 	1 40 20 2
+
+
+	
