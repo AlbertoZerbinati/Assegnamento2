@@ -82,13 +82,13 @@ namespace System {
 		//cout << "La cassa iniziale e': " << cash_desk << "\n" << endl;
 
 		//ordini evasi li trovo in orderReady
-		cout << "\n***Ordini Evasi:" << endl;
+		cout << "\n*** Ordini Evasi:" << endl;
 		for (Order p : orderReady) {
 			cout << "- " << p.quantityOrdered() << " " << p.modelName() << " del mese " << p.timeStamp() << endl;
 		}
 
 		//componenti in arrivo
-		cout << "\n***Componenti in arrivo:" << endl;
+		cout << "\n*** Componenti in arrivo:" << endl;
 
 		//riempio un vettore con tutte le componenti in arrivo
 		std::vector<components> comps;
@@ -98,12 +98,12 @@ namespace System {
 				comps.push_back(c);
 		} //questo vettore non puo' ancora essere stampato perche' contiene molteplicita' che ora sistemo
 
-		for (int i = 0; i < comps.size(); i++) {
-			if (comps[i].id != -10) {
-				for (int j = i + 1; j < comps.size(); j++) {
-					if (comps[j].id != -10 && comps[j].id == comps[i].id) {
-						comps[i].quantity += comps[j].quantity;
-						comps[j].id = -10;
+		for (int i = 0; i < comps.size(); i++) { 							// per tutte le componenti
+			if (comps[i].id != -10) { 										// controllo se l'ho già considerata
+				for (int j = i + 1; j < comps.size(); j++) {				// verifico tutte le componenti successive
+					if (comps[j].id != -10 && comps[j].id == comps[i].id) { // se e' dello stesso tipo e non ancora considerata
+						comps[i].quantity += comps[j].quantity;				// conteggio la quantita'
+						comps[j].id = -10;									// e segnalo che l'ho già considerata
 					}
 				}
 			}
@@ -111,12 +111,12 @@ namespace System {
 
 		for (components cc : comps) {
 			if (cc.id != -10)
-				cout << "- " << cc.quantity << " " << cc.name << endl; // << " arriva tra " << cc.monthsLeft + 1 << " mesi" << endl;
+				cout << "- " << cc.quantity << " " << cc.name << endl;
 		}
 
 
 		//componenti in magazzino
-		cout << "\n\n***Componenti in magazzino:" << endl;
+		cout << "\n\n*** Componenti in magazzino:" << endl;
 
 		std::vector<components> comps_arrived;
 		for (Order p: orderList) {
@@ -138,7 +138,7 @@ namespace System {
 
 		for (components cc : comps_arrived) {
 			if (cc.id != -10)
-				cout << "- " << cc.quantity << " " << cc.name << endl; // << " arriva tra " << cc.monthsLeft + 1 << " mesi" << endl;
+				cout << "- " << cc.quantity << " " << cc.name << endl;
 		}
 
 		//cout << "Cassa attualmente con: " << cash_desk << "$" << endl;

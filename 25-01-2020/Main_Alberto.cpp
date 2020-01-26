@@ -28,7 +28,6 @@ int main() {
 	ist.close();
 
 	int index = 0;
-	//syst.printAll(); la stampa deve essere gestita all'interno da System quando un ordine è evaso
 
 	//LOOP principale del programma!
 	for (month = 0; !finished(month, orders); month++) {

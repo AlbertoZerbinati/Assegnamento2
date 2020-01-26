@@ -36,6 +36,7 @@ namespace System {
 		void fill_data();       //Riempie i vettori con le informazioni dei file
 		void DecreaseMoney(vector<priceAssociation>& Ordered);     //aggiorna la cassa
 
+		//per la stampa
 		int dim_orderReady = 0;
 		void printAll();
 	};

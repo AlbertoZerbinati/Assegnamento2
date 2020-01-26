@@ -158,7 +158,7 @@ bool Order::Ready() {
 	return ready;
 }
 
-
+//ritorna il vettore con le componenti di questo ordine in arrivo
 std::vector<components> Order::componentArriving() {
 	std::vector<components> ret;
 	for (components comp : orderComponents) {
@@ -169,6 +169,7 @@ std::vector<components> Order::componentArriving() {
 	return ret;
 }
 
+//ritorna il vettore con le componenti di questo ordine arrivate
 std::vector<components> Order::componentArrived() {
 	std::vector<components> ret;
 	for (components comp : orderComponents) {

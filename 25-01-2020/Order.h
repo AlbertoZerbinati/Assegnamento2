@@ -24,9 +24,6 @@ public:
 	void order_components(vector <priceAssociation> &toUpdate);
 	void setReady();
 
-	std::vector<components> componentArriving();
-	std::vector<components> componentArrived();
-	
 	//Funzioni per la stampa
 	string modelName();
 	int timeStamp();
@@ -34,7 +31,9 @@ public:
 	int quantityOrdered();
 	double modelPrice();
 	bool Ready();
-
+	
+	std::vector<components> componentArriving();
+	std::vector<components> componentArrived();
 
 private:
 
