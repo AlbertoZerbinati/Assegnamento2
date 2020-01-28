@@ -1,0 +1,8 @@
+info importante:
+bella raga, per usare i file di input aletrnativi (orders[i].dat) poneteli nella cartella principale
+rinominandoli "orders.dat"
+
+comando compilazione:
+g++ -o output.exe Main.cpp System.cpp Order.cpp -O2
+
+esempio di esecuzione:
