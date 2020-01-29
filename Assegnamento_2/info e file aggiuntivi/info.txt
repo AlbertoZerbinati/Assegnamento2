@@ -1,0 +1,620 @@
+Gruppo 35
+Zerbinati Alberto
+Curculacos Paolo
+Spinato Matteo
+
+info importante:
+per usare i file di input aletrnativi richiesti (orders[i].dat) poneteli nella cartella principale
+rinominandoli "orders.dat"
+
+comando compilazione:
+g++ -o output.exe **.cpp -O2
+
+esempio di esecuzione:
+Mese 0----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 0 Mesi: 6           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 0 Mesi: 6           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 0 Mesi: 2           $:(12,11,10.8)
+
+
+
+4 componente C.ID(2):  Al prezzo di : 35 l'uno
+
+2 componente C.ID(7):  Al prezzo di : 85 l'uno
+
+Cassa attualmente con: 9690$
+
+orderTemp
+
+Order List
+-aspirapolvere
+
+OrderReady
+
+Mese 1----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 1 Mesi: 5           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 1 Mesi: 5           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 0 Mesi: 2           $:(12,11,10.8)
+
+
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 0 Mesi: 6           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 0 Mesi: 2           $:(5,4.85,4.7)
+
+
+
+ 10 lavatrice Al mese 1 (ID: 2, $:5000):
+  Componenti:
+      C.ID(1) C.Name: involucro Quantita': 20
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 60
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+
+
+10 componente C.ID(2):  Al prezzo di : 35 l'uno
+
+20 componente C.ID(1):  Al prezzo di : 17 l'uno
+
+Cassa attualmente con: 9000$
+
+orderTemp
+
+Order List
+-aspirapolvere
+-tostapane
+-lavatrice
+
+OrderReady
+
+Mese 2----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 1 Mesi: 4           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 1 Mesi: 4           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 0 Mesi: 2           $:(12,11,10.8)
+
+
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 1 Mesi: 5           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 0 Mesi: 2           $:(5,4.85,4.7)
+
+
+
+ 10 lavatrice Al mese 1 (ID: 2, $:5000):
+  Componenti:
+      C.ID(1) C.Name: involucro Quantita': 20
+      Status: 1 Mesi: 2           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 60
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+
+
+Cassa attualmente con: 9000$
+
+orderTemp
+
+Order List
+-aspirapolvere
+-tostapane
+-lavatrice
+
+OrderReady
+
+Mese 3----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 1 Mesi: 3           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 1 Mesi: 3           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 0 Mesi: 2           $:(12,11,10.8)
+
+
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 1 Mesi: 4           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 0 Mesi: 2           $:(5,4.85,4.7)
+
+
+
+ 10 lavatrice Al mese 1 (ID: 2, $:5000):
+  Componenti:
+      C.ID(1) C.Name: involucro Quantita': 20
+      Status: 1 Mesi: 1           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 60
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+
+
+6 componente C.ID(1):  Al prezzo di : 20 l'uno
+
+60 componente C.ID(0):  Al prezzo di : 9.1 l'uno
+
+Cassa attualmente con: 8334$
+
+orderTemp
+
+Order List
+-aspirapolvere
+-tostapane
+-lavatrice
+
+OrderReady
+
+Mese 4----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 1 Mesi: 2           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 1 Mesi: 2           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 1 Mesi: 2           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 0 Mesi: 2           $:(12,11,10.8)
+
+
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 1 Mesi: 3           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 0 Mesi: 3           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 0 Mesi: 2           $:(5,4.85,4.7)
+
+
+
+ 10 lavatrice Al mese 1 (ID: 2, $:5000):
+  Componenti:
+      C.ID(1) C.Name: involucro Quantita': 20
+      Status: 2 Mesi: 0           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 60
+      Status: 2 Mesi: 0           $:(10,9.2,9.1)
+
+
+
+Sono arrivati tutti i componenti di 10 lavatrice
+ma non ancora pronto!
+2 componente C.ID(9):  Al prezzo di : 12 l'uno
+
+10 componente C.ID(1):  Al prezzo di : 20 l'uno
+
+Cassa attualmente con: 8110$
+
+orderTemp
+
+Order List
+-aspirapolvere
+-tostapane
+-lavatrice
+
+OrderReady
+
+Mese 5----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 1 Mesi: 1           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 1 Mesi: 1           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 1 Mesi: 1           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 1 Mesi: 1           $:(12,11,10.8)
+
+
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 1 Mesi: 2           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 1 Mesi: 2           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 0 Mesi: 2           $:(5,4.85,4.7)
+
+
+
+ 10 lavatrice Al mese 1 (ID: 2, $:5000):
+  Componenti:
+      C.ID(1) C.Name: involucro Quantita': 20
+      Status: 2 Mesi: 0           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 60
+      Status: 2 Mesi: 0           $:(10,9.2,9.1)
+
+
+
+
+lavatrice e' pronta
+
+
+Chiamo printAll:
+***************************************************
+
+*** Ordini Evasi:
+- 10 lavatrice del mese 1
+
+*** Componenti in arrivo:
+- 10 circuito
+- 10 involucro
+- 10 luce
+
+
+*** Componenti in magazzino:
+- 4 circuito
+- 6 involucro
+- 4 filo
+- 2 motore
+- 2 tubo
+***************************************************
+4 componente C.ID(0):  Al prezzo di : 10 l'uno
+
+10 componente C.ID(6):  Al prezzo di : 5 l'uno
+
+Cassa attualmente con: 13020$
+
+orderTemp
+
+Order List
+-aspirapolvere
+-tostapane
+
+OrderReady
+-lavatrice
+
+Mese 6----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 2 Mesi: 0           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 2 Mesi: 0           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 2 Mesi: 0           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 2 Mesi: 0           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 2 Mesi: 0           $:(12,11,10.8)
+
+
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 1 Mesi: 1           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 1 Mesi: 1           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 0 Mesi: 1           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 1 Mesi: 1           $:(5,4.85,4.7)
+
+
+
+Sono arrivati tutti i componenti di 2 aspirapolvere
+ma non ancora pronto!
+10 componente C.ID(0):  Al prezzo di : 10 l'uno
+
+Cassa attualmente con: 12920$
+
+orderTemp
+
+Order List
+-aspirapolvere
+-tostapane
+
+OrderReady
+-lavatrice
+
+Mese 7----------------------------------------
+
+ 2 aspirapolvere Al mese 0 (ID: 0, $:540):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 4
+      Status: 2 Mesi: 0           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 6
+      Status: 2 Mesi: 0           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 4
+      Status: 2 Mesi: 0           $:(10,9.2,9.1)
+
+      C.ID(7) C.Name: motore Quantita': 2
+      Status: 2 Mesi: 0           $:(85,80,79)
+
+      C.ID(9) C.Name: tubo Quantita': 2
+      Status: 2 Mesi: 0           $:(12,11,10.8)
+
+
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 2 Mesi: 0           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 2 Mesi: 0           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 2 Mesi: 0           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 2 Mesi: 0           $:(5,4.85,4.7)
+
+
+
+
+aspirapolvere e' pronta
+
+
+Chiamo printAll:
+***************************************************
+
+*** Ordini Evasi:
+- 10 lavatrice del mese 1
+- 2 aspirapolvere del mese 0
+
+*** Componenti in arrivo:
+
+
+*** Componenti in magazzino:
+- 10 circuito
+- 10 involucro
+- 10 filo
+- 10 luce
+***************************************************
+Sono arrivati tutti i componenti di 10 tostapane
+ma non ancora pronto!
+Cassa attualmente con: 13460$
+
+orderTemp
+
+Order List
+-tostapane
+
+OrderReady
+-lavatrice
+-aspirapolvere
+
+Mese 8----------------------------------------
+
+ 10 tostapane Al mese 1 (ID: 3, $:850):
+  Componenti:
+      C.ID(2) C.Name: circuito Quantita': 10
+      Status: 2 Mesi: 0           $:(35,33.3,33)
+
+      C.ID(1) C.Name: involucro Quantita': 10
+      Status: 2 Mesi: 0           $:(20,17,16.8)
+
+      C.ID(0) C.Name: filo Quantita': 10
+      Status: 2 Mesi: 0           $:(10,9.2,9.1)
+
+      C.ID(6) C.Name: luce Quantita': 10
+      Status: 2 Mesi: 0           $:(5,4.85,4.7)
+
+
+
+
+tostapane e' pronta
+
+
+Chiamo printAll:
+***************************************************
+
+*** Ordini Evasi:
+- 10 lavatrice del mese 1
+- 2 aspirapolvere del mese 0
+- 10 tostapane del mese 1
+
+*** Componenti in arrivo:
+
+
+*** Componenti in magazzino:
+***************************************************
+Cassa attualmente con: 14310$
+
+orderTemp
+
+Order List
+
+OrderReady
+-lavatrice
+-aspirapolvere
+-tostapane
+
+Mese 9----------------------------------------
+
+Cassa attualmente con: 14310$
+
+orderTemp
+
+Order List
+
+OrderReady
+-lavatrice
+-aspirapolvere
+-tostapane
+
+Mese 10----------------------------------------
+
+Cassa attualmente con: 14310$
+
+orderTemp
+
+Order List
+
+OrderReady
+-lavatrice
+-aspirapolvere
+-tostapane
+
+Mese 11----------------------------------------
+
+Cassa attualmente con: 14310$
+
+orderTemp
+
+Order List
+
+OrderReady
+-lavatrice
+-aspirapolvere
+-tostapane
+
+Mese 12----------------------------------------
+
+Cassa attualmente con: 14310$
+
+orderTemp
+
+Order List
+
+OrderReady
+-lavatrice
+-aspirapolvere
+-tostapane
+
+Mese 13----------------------------------------
+
+Cassa attualmente con: 14310$
+
+orderTemp
+
+Order List
+
+OrderReady
+-lavatrice
+-aspirapolvere
+-tostapane
+
+La funzione di stampa richiesta dalla consegna è chiamata printAll() ed è individuabile
+dagli asterischi che ne delimitano la stampa.
+Tutte le ulteriori stampe sono solo utili a seguire il flow del programma.
+Il file input usato per la stampa d'esempio contiene:
+
+10000
+0 0 2
+1 3 10
+1 2 10
