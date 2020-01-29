@@ -1,0 +1,13 @@
+Gruppo 35
+Zerbinati Alberto
+Curculacos Paolo
+Spinato Matteo
+
+info importante:
+per usare i file di input aletrnativi richiesti (orders[i].dat) poneteli nella cartella principale
+rinominandoli "orders.dat"
+
+comando compilazione:
+g++ -o output.exe **.cpp -O2
+
+esempio di esecuzione:
